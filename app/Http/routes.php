@@ -13,6 +13,7 @@
 
 Route::get('/', ['uses' => 'IndexController@index']);
 Route::get('/tag/{id}', ['uses' => 'TagController@index']);
+Route::get('/admin', ['uses' => 'AdminController@index']);
 Route::post('/label/selected', ['uses' => 'PostController@selected']);
 Route::post('/label/star', ['uses' => 'PostController@star']);
 
