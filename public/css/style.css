@@ -1,0 +1,389 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2:300,500,600,600italic,900italic);
+
+body {
+    min-height: 800px;
+    font-family: 'Exo 2', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    background-image: url('/image/bg.jpg');
+    background-repeat: repeat;
+    background-position: top left;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Exo 2', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+h2, h3, h4, h5 {
+    font-family: 'Exo 2', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+em {
+    color: orange;
+}
+
+.container {
+    width: 970px !important;
+}
+
+.navbar-brand {
+    font-family: 'Exo 2', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.sidebar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid rgb(231, 231, 231);
+    background-color: rgb(248, 248, 248);
+}
+
+
+.footer {
+    height: 75px;
+    margin-top: 30px;
+    line-height: 75px;
+    text-align: center;
+    color: #666;
+    background-color: #222;
+}
+
+
+/* Post styles */
+
+.post .meta {
+    height: 36px;
+    padding: 5px 8px;
+    background-color: #fafafa;
+    border-radius: 2px;
+}
+
+.post .tags {
+    line-height: 20px;
+}
+
+.post .tags a:hover { text-decoration: none; }
+
+.post .tags .label {
+    line-height: 20px;
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+.post .tags .label.php       { background-color: #428BCA; }
+.post .tags .label.mysql     { background-color: #5CB85C; }
+.post .tags .label.mongodb   { background-color: #5BC0DE; }
+.post .tags .label.html      { background-color: #F0AD4E; }
+.post .tags .label.css       { background-color: #D9534F; }
+.post .tags .label.javascript { background-color: #463265; }
+
+.post footer { margin-top: 30px; }
+
+.post footer .thumbnail {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 15px 0 0;
+}
+
+/* Author Styles */
+
+.author .thumbnail {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 15px 0 0;
+}
+
+.blog-main
+{
+    background-color: rgb(248, 248, 248);
+}
+
+.about-sidebar
+{margin-top: 40px;}
+
+.none {display: none;}
+
+
+/*	--------------------------------------------------
+	:: Table Filter
+	-------------------------------------------------- */
+.panel {
+	border: 1px solid #ddd;
+	background-color: #fcfcfc;
+}
+.panel .btn-group {
+	margin: 15px 0 30px;
+}
+.panel .btn-group .btn {
+	transition: background-color .3s ease;
+}
+.table-filter {
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+}
+.table-filter tbody tr:hover {
+	cursor: pointer;
+	background-color: #eee;
+}
+.table-filter tbody tr td {
+	padding: 10px;
+	vertical-align: middle;
+	border-top-color: #eee;
+}
+.table-filter tbody tr.selected td {
+	background-color: #eee;
+}
+.table-filter tr td:first-child {
+	width: 38px;
+}
+.table-filter tr td:nth-child(2) {
+	width: 35px;
+}
+.ckbox {
+	position: relative;
+}
+.ckbox input[type="checkbox"] {
+	opacity: 0;
+}
+.ckbox label {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.ckbox label:before {
+	content: '';
+	top: 1px;
+	left: 0;
+	width: 18px;
+	height: 18px;
+	display: block;
+	position: absolute;
+	border-radius: 2px;
+	border: 1px solid #bbb;
+	background-color: #fff;
+}
+.ckbox input[type="checkbox"]:checked + label:before {
+	border-color: #2BBCDE;
+	background-color: #2BBCDE;
+}
+.ckbox input[type="checkbox"]:checked + label:after {
+	top: 3px;
+	left: 3.5px;
+	content: '\e013';
+	color: #fff;
+	font-size: 11px;
+	font-family: 'Glyphicons Halflings';
+	position: absolute;
+}
+.table-filter .star {
+	color: #ccc;
+	text-align: center;
+	display: block;
+}
+.table-filter .star.star-checked {
+	color: #F0AD4E !important;
+}
+.table-filter .star:hover {
+	color: #ccc;
+}
+.table-filter .star.star-checked:hover {
+	color: #F0AD4E;
+}
+.table-filter .media-photo {
+	width: 35px;
+}
+.table-filter .media-body {
+    display: block;
+    /* Had to use this style to force the div to expand (wasn't necessary with my bootstrap version 3.3.6) */
+}
+.table-filter .media-meta {
+	font-size: 11px;
+	color: #999;
+}
+.table-filter .media .title {
+	color: #2BBCDE;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: normal;
+	margin: 0;
+}
+.table-filter .media .title span {
+}
+
+.table-filter .media .summary {
+	font-size: 18px;
+}
+
+.fa {
+
+font-size: 24px !important;
+
+}
+
+.green-color {
+color: green !important;
+}
+
+a.category-1, .category-1 {
+color: #EA6624 !important;
+}
+
+a.category-2, .category-2 {
+color: #0B0917 !important;
+}
+
+a.category-3, .category-3 {
+color: #2E9860 !important;
+}
+
+a.category-4, .category-4 {
+color: #924AF9 !important;
+}
+
+a.category-5, .category-5 {
+color: #924AF9 !important;
+}
+
+a.category-6, .category-6 {
+color: #A63C45 !important;
+}
+
+a.category-7, .category-7 {
+color: #A63C45 !important;
+}
+
+a.category-8, .category-8 {
+color: #449CA6 !important;
+}
+
+a.category-9, .category-9 {
+color: #2E9860 !important;
+}
+
+a.category-10, .category-10 {
+color: #FFA02F !important;
+}
+
+a.category-11, .category-11 {
+color: #3D5899 !important;
+}
+
+a.category-12, .category-12 {
+color: #2E9860 !important;
+}	
+
+a.category-13, .category-13 {
+color: #2E9860 !important;
+}	
+
+a.category-13, .category-13 {
+color: #A63C45 !important;
+}	
+
+a.category-15, .category-15 {
+color: #2E9860 !important;
+}	
+
+a.category-16, .category-16 {
+color: #A63C45 !important;
+}	
+
+.btn-category-1 {
+background-color: #EA6624 !important;
+border-color: #fff;
+}
+
+.btn-category-2 {
+color: #fff;
+background-color: #0B0917 !important;
+border-color: #fff;
+}
+
+.btn-category-3 {
+color: #fff;
+background-color: #2E9860 !important;
+border-color: #fff;
+}
+
+.btn-category-4 {
+color: #fff;
+background-color: #924AF9 !important;
+border-color: #fff;
+}
+
+.btn-category-5 {
+color: #fff;
+background-color: #924AF9 !important;
+border-color: #fff;
+}
+
+.btn-category-6 {
+color: #fff;
+background-color: #A63C45 !important;
+border-color: #fff;
+}
+
+.btn-category-7 {
+color: #fff;
+background-color: #A63C45 !important;
+border-color: #fff;
+}
+
+.btn-category-8 {
+color: #fff;
+background-color: #449CA6 !important;
+border-color: #fff;
+}
+
+.btn-category-9 {
+color: #fff;
+background-color: #2E9860 !important;
+border-color: #fff;
+}
+
+.btn-category-10 {
+color: #fff;
+background-color: #FFA02F !important;
+border-color: #fff;
+}
+
+.btn-category-11 {
+color: #fff;
+background-color: #3D5899 !important;
+border-color: #fff;
+}
+
+.btn-category-12 {
+color: #fff;
+background-color: #2E9860 !important;
+border-color: #fff;
+}	
+
+.btn-category-13 {
+color: #fff;
+background-color: #2E9860 !important;
+border-color: #fff;
+}	
+
+.btn-category-13 {
+color: #fff;
+background-color: #A63C45 !important;
+border-color: #fff;
+}	
+
+.btn-category-15 {
+color: #fff;
+background-color: #2E9860 !important;
+border-color: #fff;
+}	
+
+.btn-category-16 {
+color: #fff;
+background-color: #A63C45 !important;
+border-color: #fff;
+}	
